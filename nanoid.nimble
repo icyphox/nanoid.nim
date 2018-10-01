@@ -9,4 +9,5 @@ bin           = @["nanoid"]
 
 # Dependencies
 
-requires "nim >= 0.18.0"
+requires "nim >= 0.18.0", "random >= 0.5.5"
+

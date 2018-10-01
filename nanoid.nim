@@ -31,4 +31,5 @@ proc generate*(alphabet: string = alphabet, size: int = size): string =
           if len(nanoID) >= size:
             result = nanoID
 
-
+when isMainModule:
+  echo(generate())

@@ -1,10 +1,12 @@
-import math
-import lenientops
+import
+  math,
+  lenientops,
+  pkg/random
 
-const alphabet = "_~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const size = 21
+let a = "_~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let s = 21
 
-proc generate*(alphabet: string = alphabet, size: int = size): string =
+proc generate*(alphabet: string = a, size: int = s): string =
   if alphabet == "":
     result = ""
   if size < 1:
@@ -19,17 +21,18 @@ proc generate*(alphabet: string = alphabet, size: int = size): string =
       break
 
   var step = int(ceil(1.6 * mask * size / len(alphabet)))
-  var nanoID = ""
+  var nanoID: string
 
   while true:
-    let randomBytes: seq[byte] = urandom(step)
-    for i in countUp(0, step):
-      let randByte = randomBytes[i].int and mask
+    var randomBytes: seq[byte]
+    randomBytes = urandom(step)
+    for i in countUp(0, step-1):
+      var randByte = randomBytes[i].int and mask
       if randByte < len(alphabet):
         if alphabet[randByte] in alphabet:
           nanoID.add(alphabet[randByte])
           if len(nanoID) >= size:
-            result = nanoID
+            return nanoID
 
 when isMainModule:
-  echo(generate())
+  echo generate()

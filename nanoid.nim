@@ -1,10 +1,12 @@
-import math
-import lenientops
+import
+  math,
+  lenientops,
+  pkg/random
 
-const alphabet = "_~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-const size = 21
+let a = "_~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let s = 21
 
-proc generate*(alphabet: string = alphabet, size: int = size): string =
+proc generate*(alphabet: string = a, size: int = s): string =
   if alphabet == "":
     result = ""
   if size < 1:

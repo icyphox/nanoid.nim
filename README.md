@@ -3,7 +3,7 @@
 
 ## Installation
 ```
-nimble install https://github.com/icyphox/nanid.nim
+nimble install nanoid
 ```
 ## API
 

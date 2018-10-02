@@ -27,8 +27,9 @@ echo generate() # CfUfFZ~aAVIMUH2Q~VPGg
 ```Nim
 import nanoid
 
-let a = "abcdef12345"
-let s = 10
+let
+  a = "abcdef12345"
+  s = 10
 
 echo generate(alphabet=a, size=10) # 15aa1d2b3a
 ```

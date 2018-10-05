@@ -5,7 +5,6 @@ author        = "Anirudh"
 description   = "The Nim implementation of NanoID"
 license       = "MIT"
 srcDir        = "src"
-bin           = @["nanoid"]
 
 # Dependencies
 

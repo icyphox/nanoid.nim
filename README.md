@@ -13,7 +13,7 @@ nimble install nanoid
 
 Optionally, run the test suite (after cloning this repo) using
 
-```console
+```
 nimble test
 ```
 

@@ -10,6 +10,13 @@ And it's **compact**. It uses a larger alphabet than the standard UUID (`A-Za-z0
 ```
 nimble install nanoid
 ```
+
+Optionally, run the test suite (after cloning this repo) using
+
+```console
+nimble test
+```
+
 ## Usage
 
 ### Simple

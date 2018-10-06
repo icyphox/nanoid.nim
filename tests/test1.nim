@@ -19,7 +19,6 @@ suite "Test suite for size":
 
 suite "Test suite for collisions":
   setup:
-    echo("This might take a while")
     let count = 100_000
 
   test "has no collisions for 10k entries as 21 chars long":

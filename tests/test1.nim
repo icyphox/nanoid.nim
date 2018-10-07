@@ -28,7 +28,7 @@ suite "Test suite for collisions":
       generated.add(id)
     check(generate() in generated == false)
 
-  test "has no collisions for million entries as 9 chars and base alphabet":
+  test "has no collisions for 10k entries as 9 chars and base alphabet":
     let 
       size = 9
       alphabet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"

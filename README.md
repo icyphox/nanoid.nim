@@ -1,6 +1,8 @@
 # nanoid.nim
 > the Nim implementation of [NanoID](https://github.com/ai/nanoid)
 
+[![Build Status](https://travis-ci.org/icyphox/nanoid.nim.svg?branch=master)](https://travis-ci.org/icyphox/nanoid.nim)
+
 ## What even?
 NanoID is a tiny, secure URL-friendly unique string ID generator.  
 It's **safe**. It uses cryptographically strong random APIs that guarantees proper distribution of symbols.  

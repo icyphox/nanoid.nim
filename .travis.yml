@@ -1,0 +1,39 @@
+language: c
+
+cache: ccache
+cache:
+    directories:
+        - .cache
+
+matrix:
+    include:
+        - os: linux
+          env: CHANNEL=stable
+          compiler: gcc
+
+        - os: linux
+          env: CHANNEL=devel
+          compiler: gcc
+
+        - os: osx
+          env: CHANNEL=stable
+          compiler: clang
+
+    allow_failures:
+        - env: CHANNEL=devel
+        - os: osx
+
+    fast_finish: true
+
+install:
+    - export CHOOSENIM_NO_ANALYTICS=1
+    - curl https://nim-lang.org/choosenim/init.sh -sSf > init.sh
+    - sh init.sh -y
+    - export PATH=~/.nimble/bin:$PATH
+    - echo "export PATH=~/.nimble/bin:$PATH" >> ~/.profile
+    - choosenim $CHANNEL
+
+script:
+    - nimble refresh
+    - nimble test
+

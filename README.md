@@ -51,4 +51,7 @@ let
 echo generate(alphabet=a, size=10)  # 15aa1d2b3a
 ```
 
+## TODO
+- [ ] Async API
+
 That's it, really. 

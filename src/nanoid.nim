@@ -3,7 +3,7 @@ import
   lenientops,
   pkg/random
 
-let a = "_~0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let a = "_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let s = 21
 
 proc generate*(alphabet: string = a, size: int = s): string =

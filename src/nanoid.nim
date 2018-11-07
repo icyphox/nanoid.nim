@@ -1,7 +1,11 @@
 import
   math,
   lenientops,
-  pkg/random
+  pkg/random,
+  nanoidpkg/nonsecure
+
+export
+  nonsecure
 
 let a = "_-0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 let s = 21
@@ -34,5 +38,3 @@ proc generate*(alphabet: string = a, size: int = s): string =
           if len(nanoID) >= size:
             return nanoID
 
-when isMainModule:
-  echo generate()

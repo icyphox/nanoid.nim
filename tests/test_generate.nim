@@ -7,7 +7,7 @@ suite "Test suite for size":
     let count = 100
 
   test "Generates IDs of size 21":
-    for i in countUp(0, count):
+   for i in countUp(0, count):
       check(len(generate()) == 21)
 
   test "Generates IDs of size 10":

@@ -2,7 +2,7 @@ import
   math,
   lenientops,
   pkg/random,
-  nanoidpkg/nonsecure
+  nanoid/nonsecure
 
 export
   nonsecure

@@ -51,7 +51,13 @@ let
 echo generate(alphabet=a, size=10)  # 15aa1d2b3a
 ```
 
+That’s it, really.
+
 ## TODO
 - [ ] Async API
 
-That's it, really. 
+## Contributing
+Bad code? New feature in mind? Open an issue. Better still, learn [Nim](https://nim-lang.org/documentation.html) and shoot a PR :sparkles:
+
+## License
+MIT © Anirudh Oppiliappan
